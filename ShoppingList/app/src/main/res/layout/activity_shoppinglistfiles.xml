@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/items_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="248dp">
+
+        <TableLayout
+            android:id="@+id/item_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Item_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/Item_Name" />
+
+        <EditText
+            android:id="@+id/Item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/Item_quanity" />
+
+        <EditText
+            android:id="@+id/Item_units"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/Item_units" />
+
+        <Button
+            android:id="@+id/Create_Item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="addEntry"
+            android:text="@string/Create_Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_to_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="onReturnToMainClicked"
+            android:text="@string/back_to_main" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/lists_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="248dp">
+
+        <TableLayout
+            android:id="@+id/list_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TableLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/List_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="@string/List_Name"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/Create_List"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:onClick="addEntry"
+            android:text="@string/Create_List" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Rename_View"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Rename_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="@string/Rename_Text"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/Rename_Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="@string/Rename_Confirm" />
+    </LinearLayout>
+
+
+</LinearLayout>
